@@ -1,0 +1,11 @@
+# Node modules (nicht committen)
+node_modules/
+
+# Build folder (Netlify erstellt ihn selbst)
+build/
+
+# Environment keys (API Keys etc.)
+.env
+
+# Logs
+npm-debug.log*
