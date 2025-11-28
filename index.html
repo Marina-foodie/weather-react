@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <title>Weather-App</title>
+  </head>
+  <body>
+    <div class="Weather-App">
+      <header>
+        <form class="search-form" id="search-form">
+          <input type="text" placeholder="City..." required id="searchbar" />
+          <input type="submit" value="Search" id="submit" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-date" id="weather-date"></div>
+        <div class="weather-data">
+          <div>
+            <h1 id="city"></h1>
+
+            <p class="weather-details">
+              Feels like <strong id="feels-like"></strong> <br />
+              High <strong id="high"></strong> <strong>|</strong> Low
+              <strong id="low"></strong><br />
+              Humidity <strong id="humidity"></strong> <br />
+              Wind speed <strong id="wind"></strong>
+            </p>
+          </div>
+
+          <div class="weather-container">
+            <div class="icon-state">
+              <div class="weather-icon" id="icon"></div>
+              <div class="weather-state" id="weather-state"></div>
+            </div>
+            <div class="weather-temperature" id="weather-temperature">20</div>
+            <div class="weather-unit">°C</div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        This project was coded by
+        <a
+          href="https://www.linkedin.com/in/marina-ortner-9b2816236/"
+          target="_blank"
+          >Marina Ortner</a
+        >
+        is open-sourced on
+        <a href="https://github.com/Marina-foodie" target="_blank">Github</a>
+        and hosted on
+        <a
+          href="https://app.netlify.com/teams/marina-foodie/sites"
+          target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
