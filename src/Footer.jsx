@@ -27,6 +27,7 @@ export default function Footer() {
       >
         Netlify
       </a>
+      .
     </footer>
   );
 }

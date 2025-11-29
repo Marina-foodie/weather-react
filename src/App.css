@@ -1,118 +1,124 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
-}
 body {
-  background: linear-gradient(to left, #cfd9df 0%, #e2ebf0 100%);
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #3f51b5, #2196f3);
+  color: #333;
 }
 
 .Weather-App {
-  background-color: white;
   max-width: 600px;
-  margin: 30px auto;
-  padding: 30px;
-  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
-  border-radius: 20px;
+  margin: 40px auto;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px 24px 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Header / Searchbar */
+header {
+  margin-bottom: 20px;
+}
+
+.search-form {
+  display: flex;
+  gap: 8px;
 }
 
 #searchbar {
-  background: linear-gradient(to left, #cfd9df 0%, #e2ebf0 100%);
-  font-family: "Open Sans", sans-serif;
+  flex: 1;
+  padding: 8px 10px;
   font-size: 16px;
-  border-radius: 10px;
-  border: none;
-  width: 75%;
-  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
 }
 
 #submit {
-  background: #4b7087;
-  font-family: "Open Sans", sans-serif;
+  padding: 8px 14px;
   font-size: 16px;
-  color: white;
-  border-radius: 10px;
+  border-radius: 8px;
   border: none;
-  margin-left: 5px;
-  padding: 15px 30px;
+  cursor: pointer;
+  background: #3f51b5;
+  color: white;
+}
+
+#submit:hover {
+  opacity: 0.9;
+}
+
+/* Main / Weather Info */
+main {
+  margin-bottom: 16px;
+}
+
+.weather-date {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 12px;
 }
 
 .weather-data {
   display: flex;
   justify-content: space-between;
-}
-
-h1 {
-  margin-bottom: 15px;
-  font-size: 35px;
-  line-height: 45px;
-  margin-left: 10px;
-}
-
-main {
-  padding: 30px 0;
+  align-items: center;
+  gap: 16px;
 }
 
 .weather-details {
-  font-size: 16px;
-  line-height: 25px;
-  color: #869198;
-  font-weight: 500;
-  margin-left: 10px;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .weather-container {
   display: flex;
   align-items: center;
+  gap: 12px;
 }
 
-.weather-date {
-  font-size: 18px;
-  color: #4b7087;
-  margin-left: 10px;
+.icon-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-icon img,
+.weather-icon {
+  width: 80px;
+  height: 80px; /* hier war früher 'hight' – wichtig: height! */
 }
 
 .weather-state {
-  font-size: 15px;
-  color: #4b7087;
-}
-
-.weather-icon {
-  width: 80px;
-  height: 80px;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #555;
 }
 
 .weather-temperature {
-  font-size: 80px;
-  font-weight: bold;
-  line-height: 1;
+  font-size: 48px;
+  font-weight: 600;
 }
 
 .weather-unit {
-  font-size: 30px;
-  margin-top: -35px;
+  font-size: 24px;
+  align-self: flex-start;
+  margin-top: 10px;
 }
 
-strong {
-  color: #4b7087;
-  font-weight: 500;
-}
-
-header {
-  padding: 0 0 30px 0;
-}
-
+/* Footer */
 footer {
-  padding: 30px 0 0 0;
   font-size: 12px;
   text-align: center;
+  color: #666;
+  margin-top: 16px;
 }
 
-a {
-  color: #4b7087;
+footer a {
+  color: #3f51b5;
   text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
