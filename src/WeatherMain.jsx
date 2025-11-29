@@ -21,7 +21,7 @@ export default function WeatherMain({ weather, error, loading }) {
     return null;
   }
 
-  const formattedDate = weather.date.toLocaleString("de-CH", {
+  const formattedDate = weather.date.toLocaleString("en-GB", {
     weekday: "long",
     day: "2-digit",
     month: "2-digit",
