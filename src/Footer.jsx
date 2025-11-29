@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function Footer() {
+export default function Footer({ texts }) {
   return (
     <footer>
-      This project was coded by{" "}
+      {texts.footerTextPrefix}{" "}
       <a
         href="https://www.linkedin.com/in/marina-ortner-9b2816236/"
         target="_blank"
@@ -11,7 +11,7 @@ export default function Footer() {
       >
         Marina Ortner
       </a>{" "}
-      is open-sourced on{" "}
+      {texts.footerTextMiddle}{" "}
       <a
         href="https://github.com/Marina-foodie"
         target="_blank"
@@ -19,7 +19,7 @@ export default function Footer() {
       >
         Github
       </a>{" "}
-      and hosted on{" "}
+      {texts.footerTextSuffix}{" "}
       <a
         href="https://app.netlify.com/teams/marina-foodie/sites"
         target="_blank"
